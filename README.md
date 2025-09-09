@@ -8,15 +8,15 @@ This Python script generates a 2D angular distribution heatmap from a RELION `ru
 
 ## Features
 
--Reads Euler angles (`rlnAngleRot`, `rlnAngleTilt`, `rlnAnglePsi`) from a RELION STAR file.
--Converts Euler angles to particle viewing vectors and then to azimuth/elevation coordinates.
--Creates a 2D histogram of particle orientations.
--Plots a **log-scaled heatmap** to emphasize both low- and high-density regions.
--Automatically computes the number of bins based on particle count (dynamic binning).
--Optional grid lines for better visual reference.
--X-axis and Y-axis labeled with **π-based notation**.
--Automatically verifies that all particles are accounted for in the histogram.
--Saves the heatmap as a PNG image.
+- Reads Euler angles (`rlnAngleRot`, `rlnAngleTilt`, `rlnAnglePsi`) from a RELION STAR file.
+- Converts Euler angles to particle viewing vectors and then to azimuth/elevation coordinates.
+- Creates a 2D histogram of particle orientations.
+- Plots a **log-scaled heatmap** to emphasize both low- and high-density regions.
+- Automatically computes the number of bins based on particle count (dynamic binning).
+- Optional grid lines for better visual reference.
+- X-axis and Y-axis labeled with **π-based notation**.
+- Automatically verifies that all particles are accounted for in the histogram.
+- Saves the heatmap as a PNG image.
 
 ---
 
