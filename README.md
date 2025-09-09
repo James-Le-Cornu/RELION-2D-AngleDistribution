@@ -52,17 +52,27 @@ Original number of particles: XXXX
 
 ## Plot Details
 
-**Title:** Angular Distribution
-**X-axis (Azimuth):** -π, -3π/4, -π/2, -π/4, 0, π/4, π/2, 3π/4, π
-**Y-axis (Elevation):** π/2, π/4, 0, -π/4, -π/2
-**Colorbar:** Number of particles (log scale)
+-**Title:** Angular Distribution
+
+-**X-axis (Azimuth):** -π, -3π/4, -π/2, -π/4, 0, π/4, π/2, 3π/4, π
+
+-**Y-axis (Elevation):** π/2, π/4, 0, -π/4, -π/2
+
+-**Colorbar:** Number of particles (log scale)
 
 
 ---
 
 ## Example Output
 
+**Scaling factor for azimuth and elevation = 5**
+
 <img width="3000" height="1800" alt="Angular_Distribution_2D" src="https://github.com/user-attachments/assets/5e99b047-d1a7-4ad0-9e06-3ebd53d9c52c" />
+
+**Scaling factor for azimuth and elevation = 3**
+
+<img width="3000" height="1800" alt="Angular_Distribution_2D-Cryo-EM" src="https://github.com/user-attachments/assets/b4886e92-f2b6-4bb4-a7a4-5b3837b18998" />
+
 
 The heatmap shows areas of high and low particle density, helping to evaluate angular coverage and identify potential orientation biases.
 
@@ -71,6 +81,6 @@ The heatmap shows areas of high and low particle density, helping to evaluate an
 
 ## Notes
 
-- Ensure your STAR file contains the `particles` table and the required Euler angle columns (`rlnAngleRot`, `rlnAngleTilt`, `rlnAnglePsi`).
-- The script works best for RELION 3.x and onwards STAR files.
+- Ensure your `run_data.star` or other appropriate `STAR` file contains the `particles` table and the required Euler angle columns (`rlnAngleRot`, `rlnAngleTilt`, `rlnAnglePsi`).
+- **The script works best for `RELION 3.x` and onwards STAR files.**
 - Dynamic binning is recommended to adjust bin numbers based on dataset size.
